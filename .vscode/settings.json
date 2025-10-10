@@ -1,0 +1,13 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "next-template",
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "kiroAgent.configureMCP": "Disabled",
+    "chat.sendElementsToChat.attachCSS": false,
+    "chat.sendElementsToChat.attachImages": false,
+    "chat.sendElementsToChat.enabled": false
+    
+    
+}
+

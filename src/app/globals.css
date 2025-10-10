@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-fondo: #111111;
+    --color-blanco: #ffffff;
+    --color-trans: #ffffff10;
+    --color-trans2: #ffffff30;
+    --text-h1: 1.4rem; /* 19.2px */
+    --text-h2: 0.9rem; /* 16px */
+    --text-p: 0.7rem; /* 12.8px */
+}
+
+.btn-trans {
+    @apply bg-trans border border-trans2 p-2 rounded-2xl backdrop-blur-lg hover:bg-trans2 transition-colors duration-200 ease-out;
+}
+
+.categoria {
+    @apply bg-trans w-fit px-4 py-2 rounded-3xl hover:bg-trans2 transition-colors duration-200 ease-out cursor-pointer;
+}
+
+.buscador {
+    @apply flex items-center rounded-3xl [&>input]:w-full [&>input]:h-12 [&>input]:outline-none [&>input]:border-none transition-colors duration-200 ease-out;
+}
+
+/* nav styles */
+.main-nav {
+    @apply fixed flex justify-center bottom-0 w-full p-5 z-50;
+}
+
+.nav {
+    @apply flex justify-between border border-trans2 gap-7 bg-trans w-fit py-2 px-4 rounded-4xl backdrop-blur-lg;
+}
+
+.nav-item {
+    @apply p-2 rounded-2xl hover:bg-trans2;
+}
+
+.anim {
+    @apply transition-all duration-300 ease-out active:scale-[0.9] active:opacity-70 cursor-pointer;
+}
+
+/* --------------------------------------- */
+
+body {
+    background: #111111;
+    color: #fff;
+}
+
+/* ocultar el scroll */
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
